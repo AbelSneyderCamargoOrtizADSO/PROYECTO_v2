@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="subirdoc.css">
+  <title>Cargar</title>
+</head>
+
+<body>
+  <header class="header">
+    <img src="assets/escu.png" alt="" class="header__img">
+    <h1 class="header__title">Subir Documento</h1>
+    <div class="header__user">
+      <img src="assets/iconouser.png" alt="" class="header__img header__img--display">
+      <button class="header__btn">Cerrar sesión</button>
+      <button class="header__btn header__btn--resp"><i class="bi bi-box-arrow-right"></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <form action="" class="container__form">
+        <div class="container__inputs">
+          <input type="text" class="container__input" placeholder="Título del documento">
+          <input type="text" class="container__input" placeholder="Descripción del documento">
+          <input type="text" class="container__input" placeholder="Autor del documento">
+          <input type="text" class="container__input" placeholder="Etiquetas">
+          <input type="text" class="container__input" placeholder="Año de publicación">
+          <input type="file" class="container__input">
+          <a class="cerrar" href="home.html"><i class="bi bi-x-circle-fill"></i></a>
+        </div>
+
+        <button class="container__btn">PUBLICAR AHORA ➜</button>
+      </form>
+
+      <div class="container__prev">
+        <h2 class="container__title">Previsualización de miniaturas</h2>
+        <img src="assets/libro.png" alt="" class="container__img">
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
