@@ -7,13 +7,6 @@ body{
   background-color: var(--yellow4);
 }
 
-
-/*    HEADER    */
-.header__title{
-  color: var(--green);
-  font-size: clamp(25px, 4vw, 32px);
-}
-
 /*    CONTAINER   */
 .container{
   display: flex;

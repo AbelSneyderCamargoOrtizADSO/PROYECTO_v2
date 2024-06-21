@@ -1,0 +1,19 @@
+@import url(variables.css);
+@import url(componentes/header.css);
+@import url(componentes/coment_form.css);
+
+
+body{
+  font-family: sans-serif;
+  margin: 0;
+  background-color: var(--blue3);
+}
+
+.container{
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
