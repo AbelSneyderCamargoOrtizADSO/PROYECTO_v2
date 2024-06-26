@@ -104,6 +104,9 @@ body{
     margin-left: 20px;
 }
 
+.error{
+  background-color: red;
+}
 
 @media screen and (max-width: 1020px) {
   .container{
