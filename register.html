@@ -29,10 +29,10 @@
         <form action="sv_register" method="POST" class="container__form">
           <h2 class="form__title">ESTUDIANTE</h2>
 
-          <input type="text" class="form__input dni" placeholder="Documento de identidad" name="dni"
+          <input type="text" class="form__input dni solo-numeros" placeholder="Documento de identidad" name="dni"
             required="required">
-          <input type="text" class="form__input nombres" placeholder="Nombres" name="nombres" required="required">
-          <input type="text" class="form__input apellidos" placeholder="Apellidos" name="apellidos" required="required">
+          <input type="text" class="form__input nombres solo-letras" placeholder="Nombres" name="nombres" required="required">
+          <input type="text" class="form__input apellidos solo-letras" placeholder="Apellidos" name="apellidos" required="required">
           <input type="text" class="form__input" placeholder="Correo electrónico" name="correo" required="required">
           <input type="password" class="form__input" placeholder="Contraseña" name="password" required="required">
           <input list="cursos" type="text" class="form__input grado" placeholder="Grado Académico Ej: 8 (octavo)"
@@ -59,7 +59,8 @@
     </section>
   </main>
 
-  <script src="javascript/valid_login.js"></script>
+  <script src="javascript/validaciones.js"></script>
+
 
 </body>
 

@@ -59,7 +59,7 @@
 
       <div class="card">
         <div class="card__info">
-          <p class="card__name">Ana López <br> <span class="card__curso">9-03</span></p>
+          <p class="card__name">Carlos celis <br> <span class="card__curso">9-03</span></p>
           <p class="card__fecha">03/04/23</p>
         </div>
         <p class="card__text">
@@ -75,7 +75,7 @@
 
       <div class="card">
         <div class="card__info">
-          <p class="card__name">Ana López <br> <span class="card__curso">9-03</span></p>
+          <p class="card__name">Abel <br> <span class="card__curso">9-03</span></p>
           <p class="card__fecha">03/04/23</p>
         </div>
         <p class="card__text">
@@ -91,7 +91,7 @@
 
       <div class="card">
         <div class="card__info">
-          <p class="card__name">Ana López <br> <span class="card__curso">9-03</span></p>
+          <p class="card__name">Karen <br> <span class="card__curso">9-03</span></p>
           <p class="card__fecha">03/04/23</p>
         </div>
         <p class="card__text">
@@ -107,7 +107,7 @@
 
       <div class="card">
         <div class="card__info">
-          <p class="card__name">Ana López <br> <span class="card__curso">9-03</span></p>
+          <p class="card__name">Karol <br> <span class="card__curso">9-03</span></p>
           <p class="card__fecha">03/04/23</p>
         </div>
         <p class="card__text">
@@ -122,6 +122,17 @@
       </div>
     </section>
   </main>
+
+  <script>
+    const deleteBtn = document.querySelectorAll('.card__btn');
+
+    deleteBtn.forEach(button => {
+      button.addEventListener('click', () => {
+        const card = button.parentNode;
+        card.remove();
+      });
+    });
+  </script>
 
 </body>
 

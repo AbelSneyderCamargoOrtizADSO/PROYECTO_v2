@@ -10,6 +10,10 @@
   position: relative;
 }
 
+.header-admin{
+  background-color: var(--blue2);
+}
+
 .header__img{
   width: 65px;
 }
@@ -29,6 +33,7 @@
 .header__title{
   color: var(--green);
   font-size: clamp(25px, 4vw, 32px);
+  display: none;
 }
 
 .header__user{
@@ -55,6 +60,8 @@
   background-color: var(--bluefil);
   border-radius: var(--radius);
   display: none;
+  z-index: 999;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .nav__list{
@@ -93,8 +100,12 @@
   border: 0;
   background-color: var(--green);
   color: var(--green3);
+  cursor: pointer;
 }
-
+.header__btn-admin{
+  background-color: var(--blue);
+  color: var(--blue3);
+}
 .header__btn--resp{
   display: none;
 }
@@ -103,46 +114,46 @@
 /*    RESPONSIVE    */
 @media screen and (max-width:1200px) {
   :root{
-    --box-pd: 0 35px;
+      --box-pd: 0 35px;
   }
 
   .header__search{
-    width: 35vw;
+      width: 35vw;
   }
 
   .header__img{
-    width: 55px;
+      width: 55px;
   }
 }
 
 @media screen and (max-width:650px){
   :root{
-    --box-pd: 0 15px;
+      --box-pd: 0 15px;
   }
 
   .header{
-    margin-bottom: 60px;
+      margin-bottom: 60px;
   }
-  
+
   .header__search{
-    width: 100vw;
-    position: absolute;
-    bottom: -40px;
-    left: 0;
+      width: 100vw;
+      position: absolute;
+      bottom: -40px;
+      left: 0;
   }
 
   .header__btn{
-    display: none;
+      display: none;
   }
 
   .header__btn--resp{
-    display: inline;
-    font-size: 15px;
-    padding: 10px 15px;
+      display: inline;
+      font-size: 15px;
+      padding: 10px 15px;
   }
 
   .header__search{
-    order: 4;
+      order: 4;
   }
 
 }

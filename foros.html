@@ -13,8 +13,33 @@
     <img src="assets/escu.png" alt="" class="header__img">
     <input type="search" class="header__search" placeholder="Buscar...">
     <div class="header__user">
-      <img src="assets/iconouser.png" alt="" class="header__img header__img--display">
-      <button class="header__btn">Cerrar sesión</button>
+      <div class="header__menu">
+        <img src="assets/iconouser.png" alt="" class="header__img header__img--display">
+        <i class="bi bi-caret-down-fill"></i>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list">
+              <a href="subirdoc.html" class="nav__link"><i class="bi bi-file-earmark-arrow-up-fill"></i> Subir
+                documento</a>
+            </li>
+            <li class="nav__list">
+              <a href="subirforo.html" class="nav__link"><i class="bi bi-chat-square-text-fill"></i> Realizar foro</a>
+            </li>
+            <li class="nav__list">
+              <a href="subirsoli.html" class="nav__link"><i
+                  class="bi bi-chat-square-text-fill"></i> Subir solicitud</a>
+            </li>
+            <li class="nav__list">
+              <a href="CRUD/docente.html" class="nav__link"><i class="bi bi-person-fill-gear"></i> Gestionar docentes</a>
+            </li>
+            <li class="nav__list">
+              <a href="solicitudes/soli.html" class="nav__link"><i class="bi bi-envelope-paper-fill"></i>
+                Solicitudes</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="header__btn" id="cerrarSesion">Cerrar sesión</button>
       <button class="header__btn header__btn--resp"><i class="bi bi-box-arrow-right"></i></button>
     </div>
   </header>

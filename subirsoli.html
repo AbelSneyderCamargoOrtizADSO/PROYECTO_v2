@@ -5,16 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="subirsoli.css">
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
   <title>Formulario Solicitudes</title>
 </head>
 
 <body>
   <header class="header">
     <img src="assets/escu.png" alt="" class="header__img">
-    <h1 class="header__title">Realizar solicitud</h1>
+    <h1 class="header__title">Crear Nuevo Foro</h1>
     <div class="header__user">
-      <img src="assets/iconouser.png" alt="" class="header__img header__img--display">
-      <button class="header__btn">Cerrar sesión</button>
+      <div class="header__menu">
+        <img src="assets/iconouser.png" alt="" class="header__img header__img--display">
+        <i class="bi bi-caret-down-fill"></i>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list">
+              <a href="subirdoc.html" class="nav__link"><i class="bi bi-file-earmark-arrow-up-fill"></i> Subir
+                documento</a>
+            </li>
+            <li class="nav__list">
+              <a href="subirforo.html" class="nav__link"><i class="bi bi-chat-square-text-fill"></i> Realizar foro</a>
+            </li>
+            <li class="nav__list">
+              <a href="subirsoli.html" class="nav__link"><i
+                  class="bi bi-chat-square-text-fill"></i> Subir solicitud</a>
+            </li>
+            <li class="nav__list">
+              <a href="CRUD/docente.html" class="nav__link"><i class="bi bi-person-fill-gear"></i> Gestionar docentes</a>
+            </li>
+            <li class="nav__list">
+              <a href="solicitudes/soli.html" class="nav__link"><i class="bi bi-envelope-paper-fill"></i>
+                Solicitudes</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="header__btn" id="cerrarSesion">Cerrar sesión</button>
       <button class="header__btn header__btn--resp"><i class="bi bi-box-arrow-right"></i></button>
     </div>
   </header>
@@ -23,11 +49,24 @@
     <section class="container">
       <form action="" class="form__coment form__coment--bg">
         <h2 class="form__title">Realiza tu solicitud de material de apoyo o libros</h2>
-        <textarea class="form__input" name="" id="" cols="30" rows="7"></textarea>
+        <div class="form__group">
+          <div id="editor"></div>
+          <textarea class="form__textarea" id="descripcion" name="descripcion" style="display:none;"></textarea>
+        </div>
         <button class="form__btn">Publicar solicitud</button>
+        <a class="cerrar" href="index.html"><i class="bi bi-x-circle-fill"></i></a>
       </form>
     </section>
   </main>
+
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+  <script>
+    var quill = new Quill('#editor', {
+      theme: 'snow'
+    });
+  </script>
+
 </body>
 
 </html>

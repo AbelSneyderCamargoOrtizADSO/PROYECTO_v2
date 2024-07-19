@@ -39,10 +39,10 @@
         <form action="" class="container__form">
           <h2 class="form__title">ESTUDIANTE</h2>
 
-          <input type="text" class="form__input" placeholder="Documento de identidad" required>
+          <input type="text" class="form__input solo-numeros" placeholder="Documento de identidad" required>
           <input type="password" class="form__input" placeholder="Contraseña" required>
 
-          <button class="form__btn">Ingresar</button>
+          <button class="form__btn" id="ingresar">Ingresar</button>
 
           <p class="form__reg">¿Aún no te has registrado? <a href="register.html" class="form__link">REGISTRARSE</a></p>
         </form>
@@ -57,7 +57,7 @@
         <form action="" class="container__form container__form--doc">
           <h2 class="form__title form__title--doc">DOCENTE</h2>
 
-          <input type="text" class="form__input form__input--doc" placeholder="Documento de identidad">
+          <input type="text" class="form__input form__input--doc solo-numeros" placeholder="Documento de identidad">
           <input type="password" class="form__input form__input--doc" placeholder="Contraseña">
 
           <button class="form__btn form__btn--doc">Ingresar</button>
@@ -73,7 +73,7 @@
         <form action="" class="container__form container__form--admin">
           <h2 class="form__title form__title--admin">ADMINISTRADOR</h2>
 
-          <input type="text" class="form__input form__input--admin" placeholder="Documento de identidad">
+          <input type="text" class="form__input form__input--admin solo-numeros" placeholder="Documento de identidad">
           <input type="password" class="form__input form__input--admin" placeholder="Contraseña">
 
           <button class="form__btn form__btn--admin">Ingresar</button>
@@ -120,7 +120,15 @@
       btndoc.classList.remove("select");
       btnestu.classList.add("select");
     });
+
+    const ingresar = document.getElementById('ingresar');
+
+    ingresar.addEventListener("click", () => {
+      window.location.href = "index.html";
+    })
   </script>
+
+  <script src="javascript/validaciones.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,10 @@ body{
   background-color: var(--blue3);
 }
 
+.header__title{
+  display: block;
+}
+
 .container{
   height: 90vh;
   width: 100vw;
@@ -17,3 +21,23 @@ body{
   align-items: center;
 }
 
+.form__coment{
+  position: relative;
+}
+
+#editor {
+  height: 400px;
+  width: 800px;
+  background-color: #fff;
+  border: 0;
+  padding: 10px;
+}
+
+.cerrar{
+  position: absolute;
+  color: crimson;
+  font-size: 25px;
+  border-radius: var(--radius);
+  top: 14px;
+  right: 14px;
+}

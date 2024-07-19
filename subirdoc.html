@@ -21,14 +21,14 @@
 
   <main>
     <section class="container">
-      <form action="" class="container__form">
+      <form action="" class="container__form" enctype="multipart/form-data">
         <div class="container__inputs">
-          <input type="text" class="container__input" placeholder="Título del documento">
+          <input type="text" class="container__input solo-letras" placeholder="Título del documento">
           <input type="text" class="container__input" placeholder="Descripción del documento">
-          <input type="text" class="container__input" placeholder="Autor del documento">
+          <input type="text" class="container__input solo-letras" placeholder="Autor del documento">
           <input type="text" class="container__input" placeholder="Etiquetas">
-          <input type="text" class="container__input" placeholder="Año de publicación">
-          <input type="file" class="container__input">
+          <input type="text" class="container__input solo-numeros" placeholder="Año de publicación">
+          <input type="file" class="container__input" accept="application/pdf">
           <a class="cerrar" href="index.html"><i class="bi bi-x-circle-fill"></i></a>
         </div>
 
@@ -43,6 +43,7 @@
     </section>
 
   </main>
+  <script src="javascript/validaciones.js"></script>
 
 </body>
 
